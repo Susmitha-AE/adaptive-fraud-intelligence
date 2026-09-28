@@ -1,0 +1,74 @@
+{
+  "dataset_source": "development_sample",
+  "dataset_path": "data/sample_transactions.csv",
+  "dataset_summary": {
+    "total_rows": 1250,
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "class_imbalance": {
+      "legitimate": 1154,
+      "fraudulent": 96,
+      "fraud_ratio": 0.0768
+    }
+  },
+  "metrics": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "confusion_matrix": [
+      [
+        346,
+        0
+      ],
+      [
+        0,
+        29
+      ]
+    ]
+  },
+  "top_features": [
+    {
+      "feature": "V14",
+      "importance": 0.3113
+    },
+    {
+      "feature": "V12",
+      "importance": 0.149
+    },
+    {
+      "feature": "V10",
+      "importance": 0.1411
+    },
+    {
+      "feature": "V17",
+      "importance": 0.1399
+    },
+    {
+      "feature": "V4",
+      "importance": 0.0947
+    },
+    {
+      "feature": "amount_log",
+      "importance": 0.0823
+    },
+    {
+      "feature": "Amount",
+      "importance": 0.0279
+    },
+    {
+      "feature": "hour_of_day",
+      "importance": 0.0251
+    },
+    {
+      "feature": "V8",
+      "importance": 0.0031
+    },
+    {
+      "feature": "V24",
+      "importance": 0.0029
+    }
+  ],
+  "model_type": "RandomForestClassifier (Balanced)"
+}
